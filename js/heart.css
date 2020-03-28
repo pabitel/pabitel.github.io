@@ -1,0 +1,11 @@
+#canvasZone {  
+    width: 200px;  
+    height: 200px;  
+    text-align: center; 
+}  
+
+#myCanvas {  
+    height:200px;  
+    display: block;  
+    /*background-color:aqua;*/  
+}  

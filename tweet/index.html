@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tweet</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./moment.js"></script>
+  <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- <script type="text/javascript" src="./vue.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body>
+  <div id="app" v-loading="loading" element-loading-text="请你吃棒棒糖" element-loading-spinner="el-icon-lollipop"
+    element-loading-background="rgba(0, 0, 0, 0.3)">
+    <div class="content">
+      <ul class="tweetUl">
+        <li v-for="(item,index) in list" :key="index" class="tweet">
+          <span class="tweetBody" v-html="item.body.replace(/\n/g,'<br>')"></span><br>
+          <span class="time">{{item.created_at}}</span>
+        </li>
+      </ul>
+    </div>
+    <el-pagination class="footer" @current-change="handlePageCurrentChange" layout="prev, pager, next" :total="total">
+    </el-pagination>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>

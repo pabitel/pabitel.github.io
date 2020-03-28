@@ -1,0 +1,55 @@
+body {
+  background-color: #fafafa;
+  color: #22272a;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+.tweetUl {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 2px;
+}
+.tweetBody{
+  font-size: 80%;
+}
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.time {
+  font-size: 60%;
+  color: darkgray;
+}
+
+.tweet {
+  padding: 10px 15px;
+  background-color: #fafafa;
+  list-style-type: none;
+}
+
+
+.el-dialog,
+.el-pager li {
+  background: #fafafa;
+}
+
+.el-pagination button:disabled {
+  background: #fafafa;
+}
+
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  background: #fafafa;
+  color: #408ec6;
+}

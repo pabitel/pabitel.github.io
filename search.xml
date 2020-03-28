@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>你好哇！</title>
+    <url>/2020/03/28/%E7%8C%8E%E6%88%B7%E6%98%9F%E5%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
+        <div id="aplayer-iDAgxnpR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-iDAgxnpR"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "猎户星座",
+              author: "陈二",
+              url: "./028.aac",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+<p>心血来潮，捡起我得老破吉他，弹了一首 猎户星座 送给你<br>虽然惨不忍闻，已经是矮子里挑个高得了 哈哈哈<br>今天家里有亲戚来了，中午吃了鸭子，晚上吃老鹅，<br>夜里睡觉会不会梦见在游泳，还不停的呱呱得叫<br>鸭子是嘎嘎的叫才对<br>我记得小时候邻居养了一只大白鹅<br>它每天早上都会横在我上学的路上<br>我会拿着小树枝和它去决斗，每次却都会被它追着跑<br>小时候我可笨了，有个大人说眼睛闭起来跑步会变很快<br>我啊，我就闭着眼跑，然后掉到小沟里，糊了一身泥回家</p>
+<p>天气又变冷了，但是最近莫名的很高兴，<br>就像你知道那种大公鸡 翘着尾巴 昂着头到处追着人跑的那种</p>
+<p>哈哈哈<br>我快要变成一架战斗鸡<br>在这阳光明媚的夜<br>轰轰轰<br>在空中画出一个个小星星<br>你要抬头看哪</p>
+]]></content>
+      <tags>
+        <tag>diary</tag>
+      </tags>
+  </entry>
+</search>
