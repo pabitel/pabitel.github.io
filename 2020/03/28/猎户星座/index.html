@@ -7,18 +7,18 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="google-site-verification" content="Gf-r5eCqoR2bOZIZYn5me3lOAm33OUdIt_D7IUuH_fE">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-iDAgxnpR&quot;),             narrow: false,             autoplay: true,">
+    <meta name="description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-sjKvtRXu&quot;),             narrow: false,             autoplay: true,">
 <meta name="keywords" content="diary">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你好哇！">
 <meta property="og:url" content="http://yoursite.com/2020/03/28/猎户星座/index.html">
 <meta property="og:site_name" content="游吟者的梦">
-<meta property="og:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-iDAgxnpR&quot;),             narrow: false,             autoplay: true,">
+<meta property="og:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-sjKvtRXu&quot;),             narrow: false,             autoplay: true,">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2020-03-28T13:49:49.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="你好哇！">
-<meta name="twitter:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-iDAgxnpR&quot;),             narrow: false,             autoplay: true,">
+<meta name="twitter:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-sjKvtRXu&quot;),             narrow: false,             autoplay: true,">
     
     
         
@@ -49,6 +49,7 @@
     
     
     <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="js/layui/css/layui.css">
 <link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
@@ -78,6 +79,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" href="/2020/04/11/notgood/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
@@ -150,12 +153,12 @@
 
   <div class="content" itemprop="articleBody">
     
-        <div id="aplayer-iDAgxnpR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-sjKvtRXu" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-iDAgxnpR"),
+            element: document.getElementById("aplayer-sjKvtRXu"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -254,6 +257,7 @@
       </ul>
     </nav>
   </div>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 </footer>
 
     </div>
@@ -268,6 +272,7 @@
 <script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/ityped.js"></script>
 <script src="/js/main.js"></script>
+
 <!-- search -->
 
 <!-- Google Analytics -->
@@ -308,6 +313,48 @@
             }
           })();
         }
+        
     </script>
 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 -->
+
+
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+<script src="./js/layui/layui.js"></script>
+<script>
+  $(document).ready(function () {
+    var offset = '100000';
+    var {
+      Query,
+      User
+    } = AV;
+    AV.init({
+      appId: 'zsJtUBf48iP5TGs5G0KzPI6N-gzGzoHsz',
+      appKey: 'Duh2N6aJa3s6KQSLSjTVYJIS'
+    });
+    var TestObject = AV.Object.extend('ipaddress');
+    var testObject = new TestObject();
+    var GirlInfo = AV.Object.extend('girlInfo');
+    var girlInfo = new GirlInfo();
+    var appVersion = window.navigator.appVersion;
+    testObject.set('ip', returnCitySN["cip"]);
+    testObject.set('address', returnCitySN["cname"]);
+    testObject.set('appVersion', appVersion);
+    testObject.set('userAgent',window.navigator.userAgent);
+    testObject.save().then(function (testObject) {
+    })
+    var query = new AV.Query('city');
+    query.find().then(function (results) {
+      console.log(results);
+    }, function (error) {
+      // error is an instance of AVError.
+    });
+  });
+</script>
+

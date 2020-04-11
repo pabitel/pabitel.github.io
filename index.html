@@ -47,6 +47,7 @@
     
     
     <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="js/layui/css/layui.css">
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -57,11 +58,11 @@
   <a href="/">
   
     
-      <a href="/"><div id="logo" style="background-image: url(/images/haizi_64.ico);"></div></a>
+      <div id="logo" style="background-image: url(/images/haizi_64.ico);"></div>
     
   
     <div id="title">
-      <a href="/"><h1>游吟者的梦</h1></a></a>
+      <h1>游吟者的梦</h1>
     </div>
   </a>
   <div id="nav">
@@ -87,9 +88,7 @@
         
         <section id="about">
   
-    <!-- <span id="desc0"></span>
-    <span id="desc1"></span> -->
-    <p>浮游生物</p>
+      <p>浮游生物</p>
 
   
   
@@ -107,8 +106,27 @@
       
       
       
+      
+      
 
     
+    
+      <li class="post-item">
+        
+    <div class="meta">
+        <time datetime="2020-04-11T15:54:44.000Z" itemprop="datePublished">2020-04-11</time>
+    </div>
+
+
+        
+        <span>
+    
+        <a class="" href="/2020/04/11/notgood/">此刻很想吃一根糖葫芦</a>
+    
+
+
+</span>
+      </li>
     
       <li class="post-item">
         
@@ -130,7 +148,6 @@
   </ul>
   
 </section>
-
 
 
         
@@ -155,6 +172,7 @@
       </ul>
     </nav>
   </div>
+  <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 </footer>
 
     </div>
@@ -169,6 +187,7 @@
 <script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/ityped.js"></script>
 <script src="/js/main.js"></script>
+
 <!-- search -->
 
 <!-- Google Analytics -->
@@ -209,6 +228,48 @@
             }
           })();
         }
+        
     </script>
 
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 -->
+
+
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+<script src="./js/layui/layui.js"></script>
+<script>
+  $(document).ready(function () {
+    var offset = '100000';
+    var {
+      Query,
+      User
+    } = AV;
+    AV.init({
+      appId: 'zsJtUBf48iP5TGs5G0KzPI6N-gzGzoHsz',
+      appKey: 'Duh2N6aJa3s6KQSLSjTVYJIS'
+    });
+    var TestObject = AV.Object.extend('ipaddress');
+    var testObject = new TestObject();
+    var GirlInfo = AV.Object.extend('girlInfo');
+    var girlInfo = new GirlInfo();
+    var appVersion = window.navigator.appVersion;
+    testObject.set('ip', returnCitySN["cip"]);
+    testObject.set('address', returnCitySN["cname"]);
+    testObject.set('appVersion', appVersion);
+    testObject.set('userAgent',window.navigator.userAgent);
+    testObject.save().then(function (testObject) {
+    })
+    var query = new AV.Query('city');
+    query.find().then(function (results) {
+      console.log(results);
+    }, function (error) {
+      // error is an instance of AVError.
+    });
+  });
+</script>
+
