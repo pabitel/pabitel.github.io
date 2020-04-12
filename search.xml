@@ -4,7 +4,7 @@
     <title>此刻很想吃一根糖葫芦</title>
     <url>/2020/04/11/notgood/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-ZdkFOvmL" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="10043141" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="200px" data-preload="auto" data-theme="#ad7a86"></div>
+    <div id="aplayer-ONsLFBTJ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="562940962" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="200px" data-preload="auto" data-theme="#ad7a86"></div>
 <p>失落，茫然，麻木<br>在深夜点起一根烟<br>外面是雨天，烟头的亮光反射在窗户上<br>是一个红色的月亮</p>
 <p>终于不得不挪动生了根的屁股<br>安稳的生活，会让人丧失斗志<br>当想着肆无忌惮的再次面对暴风雨<br>却被死死按在地上反复摩擦</p>
 <p>我应该是一个什么样的我<br>该到那里去，该做些什么<br>一晃之间三十年即将过去了<br>仿佛什么都没有做</p>
@@ -20,12 +20,12 @@
     <title>你好哇！</title>
     <url>/2020/03/28/%E7%8C%8E%E6%88%B7%E6%98%9F%E5%BA%A7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-        <div id="aplayer-sjKvtRXu" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-uYJnINmT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-sjKvtRXu"),
+            element: document.getElementById("aplayer-uYJnINmT"),
             narrow: false,
             autoplay: true,
             showlrc: false,
