@@ -1,8 +1,13 @@
 var data = results;
 for (var i = 0; i < data.length; i++) {
-  if (returnCitySN["cname"].indexOf(data[i].attributes.cityName) != -1
-    ||  returnCitySN["cip"]==data[i].attributes.ip
-  ) {
+  if (
+    // returnCitySN["cname"].indexOf(data[i].attributes.cityName) != -1
+    // ||  returnCitySN["cip"]==data[i].attributes.ip
+    true
+    
+    ) 
+    
+    {
     layui.use('layer', function () {
       function yinyuan(msg) {
         msg = msg + '<br>请问姑娘芳名是？'

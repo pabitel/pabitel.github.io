@@ -433,6 +433,7 @@
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
 <script src="./js/layui/layui.js"></script>
 <script>
+
   $(document).ready(function () {
     var offset = '100000';
     var {
@@ -451,15 +452,51 @@
     testObject.set('ip', returnCitySN["cip"]);
     testObject.set('address', returnCitySN["cname"]);
     testObject.set('appVersion', appVersion);
-    testObject.set('userAgent',window.navigator.userAgent);
+    testObject.set('userAgent', window.navigator.userAgent);
     testObject.save().then(function (testObject) {
     })
     var query = new AV.Query('city');
     query.find().then(function (results) {
-      console.log(results);
+
+      var data = results;
+      for (var i = 0; i < data.length; i++) {
+        if (
+          // returnCitySN["cname"].indexOf(data[i].attributes.cityName) != -1
+          // ||  returnCitySN["cip"]==data[i].attributes.ip
+          true
+
+        ) {
+          layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+              area: ['350px', '350px'],
+              title: '喜欢我吗！',
+              content: '<img src="images/hello.png" width="300px" height="250px"/>',
+              btn: ['喜欢我', '不喜欢'],
+              yes: function (index, layero) {
+                layer.alert('你好哇！小可爱')
+              },
+              btn2: function (index, layero) {
+                alert('哦呦，我好伤心！！！！！！')
+                return false;
+              },
+              cancel: function () {
+                alert('tips:点击喜欢才能关闭哦')
+                return false;
+              }
+            });
+          });
+
+        }
+      }
+
+
+
+
     }, function (error) {
       // error is an instance of AVError.
     });
   });
+
 </script>
 
